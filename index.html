@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal Sankey Chart Example</title>
+  <!-- Updated CSS file name -->
+  <link rel="stylesheet" href="jocarsa | floralwhite.css">
+</head>
+<body>
+  <div id="chart-container"></div>
+
+  <!-- Updated JavaScript file name -->
+  <script src="jocarsa | floralwhite.js"></script>
+  <script>
+    const data = {
+      "nodes": [
+        { "name": "Alumno 1", "color": "#1f77b4" },
+        { "name": "Alumno 2" }, // Will be assigned a random color
+        { "name": "Alumno 3", "color": "#ff7f0e" },
+        { "name": "Alumno 4" }, // Will be assigned a random color
+        { "name": "Empresa 1", "color": "#2ca02c" },
+        { "name": "Empresa 2", "color": "#d62728" }
+      ],
+      "links": [
+        { "source": 0, "target":4, "value": 1 },
+        { "source": 1, "target": 4, "value": 3 },
+        { "source": 2, "target": 4, "value": 4 },
+        { "source": 3, "target": 5, "value": 2 }
+      ]
+    };
+
+    // Render the Sankey chart
+    jocarsaFloralwhite.createSankeyChart({
+      element: '#chart-container',
+      data: data,
+      width: 600,
+      height: 800,
+      nodeWidth: 120,
+      nodePadding: 10
+    });
+  </script>
+</body>
+</html>
+

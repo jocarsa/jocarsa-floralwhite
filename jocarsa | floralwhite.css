@@ -1,0 +1,45 @@
+/* Basic styling for Jocarsa Floralwhite nodes and links */
+
+/* 1) Remove or comment out default fill so inline fill (node.color) shows immediately */
+// .jocarsa-floralwhite-node rect {
+//   fill: steelblue; /* Remove this line */
+//   stroke: #ffffff;
+//   cursor: pointer;
+// }
+
+.jocarsa-floralwhite-node rect {
+  stroke: #ffffff;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+/* Text styling */
+.jocarsa-floralwhite-node text {
+  fill: #000;
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+
+/* 2) Remove or comment out default stroke color so link gradients become visible */
+// .jocarsa-floralwhite-link {
+//   fill: none;
+//   stroke: #000;        /* Remove this line */
+//   stroke-opacity: 0.2; /* If desired, keep or remove the opacity for partial transparency */
+//   cursor: pointer;
+// }
+
+.jocarsa-floralwhite-link {
+  fill: none;
+  stroke-opacity: 0.2; /* Adjust or remove if you want full color from the gradient */
+  cursor: pointer;
+}
+
+.jocarsa-floralwhite-link:hover {
+  stroke-opacity: 0.5;
+}
+
+/* Optional: Additional styling for SVG container */
+.jocarsa-floralwhite-svg {
+  font-family: sans-serif;
+}
+
